@@ -1,0 +1,207 @@
+/*
+STYLESHEET FOR JAVAFXGRAPH VISUALIZATION
+*/
+@font-face {
+    font-family: 'Xolonium';
+    src: url('fonts/xolonium/Xolonium-Regular.otf');
+}
+
+.graph {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 75%, rgb(35, 40, 56) 0%, rgb(13, 14, 20) 100%);
+    -fx-text-fill: white;
+}
+
+.vertex {
+    -fx-stroke-width: 2;
+    -fx-stroke: rgb(46,46,46);
+    -fx-stroke-type: inside; /* you should keep this if using arrows */
+    -fx-fill: rgb(190, 190, 190);
+}
+
+.vertex-label {
+    -fx-font: 12pt "Xolonium";
+    -fx-fill: rgb(189, 223, 252);
+    -fx-stroke: rgb(189, 223, 252);
+}
+
+/*
+.vertex-label-highlight {
+    -fx-font: 14pt "Xolonium";
+    -fx-text-fill: transparent;
+    -fx-stroke: transparent;
+
+}
+*/
+
+.edge {
+    -fx-stroke-width: 2;
+    -fx-stroke: rgb(122, 214, 213);
+    -fx-stroke-dash-array: 2 5 2 5; /* remove for clean edges */  
+    -fx-fill: transparent; /*important for curved edges */
+    -fx-stroke-line-cap: round;
+
+}
+
+.edge-label {
+    -fx-font: normal 8pt "Xolonium";
+    -fx-text-fill: #FF6D66;
+}
+
+.arrow {
+    -fx-stroke-width: 4;
+    -fx-stroke: #FF6D66;  
+
+}
+
+/* Custom vertex. You should revert any unwanted styling in the default element, 
+   style, since custom styles will be appended to the default style */
+.myVertex {
+    -fx-stroke-width: 5;
+    -fx-stroke: rgb(97, 64, 247);
+    -fx-effect: dropshadow( gaussian , rgb(116, 167, 196) , 23 , .4 , 1, 1 );
+    -fx-stroke-type: inside; /* you should keep this if using arrows */
+    -fx-fill: rgb(66, 226, 247);
+}
+
+.centerVertex {
+    -fx-stroke-width: 5;
+    -fx-stroke: rgb(247, 158, 134);
+    -fx-effect: dropshadow( gaussian , rgb(8, 1, 8) , 18 , .3 , 1, 1 );
+    -fx-stroke-type: inside; /* you should keep this if using arrows */
+    -fx-fill: rgb(59, 81, 92);
+}
+
+
+.edgeAromatic {
+    -fx-stroke-width: 2;
+    -fx-stroke: rgb(100, 63, 17);
+    -fx-stroke-dash-array: 2 5 2 5; /* remove for clean edges */
+    -fx-fill: transparent; /*important for curved edges */
+    -fx-stroke-line-cap: round;
+}
+
+.edgeSingle {
+    -fx-stroke-width: 2;
+    -fx-stroke: rgb(140, 207, 191);
+    -fx-stroke-dash-array: 2 1 1 2; /* remove for clean edges */
+    -fx-fill: transparent; /*important for curved edges */
+    -fx-stroke-line-cap: round;
+}
+
+.edgeDouble {
+    -fx-stroke-width: 4;
+    -fx-stroke: rgb(58, 144, 224);
+    -fx-stroke-dash-array: 2 1 1 2; /* remove for clean edges */
+    -fx-fill: transparent; /*important for curved edges */
+    -fx-stroke-line-cap: round;
+}
+
+.edgeTriple {
+    -fx-stroke-width: 6;
+    -fx-stroke: rgb(125, 250, 135);
+    -fx-stroke-dash-array: 2 1 1 2; /* remove for clean edges */
+    -fx-fill: transparent; /*important for curved edges */
+    -fx-stroke-line-cap: round;
+    -fx-effect: dropshadow( three-pass-box , rgba(125, 250, 135, .7) , 9, 0.0 , 0 , 0 );
+}
+
+/* Custom vertex label. You should revert any unwanted styling in the default element,
+   style, since custom styles will be appended to the default style
+               0, "C",
+               1, "N",
+               2, "O",
+               3, "F",
+               4, "I",
+               5, "Cl",
+               6, "Br"
+       );
+
+       0	C	(50, 50, 50)	Dark gray – standard color for Carbon
+       1	N	(0, 0, 255)	Blue – standard color for Nitrogen
+       2	O	(255, 0, 0)	Red – standard color for Oxygen
+       3	F	(144, 224, 80)	Light green – commonly used for Fluorine
+       4	I	(148, 0, 148)	Dark violet – standard for Iodine
+       5	Cl	(0, 255, 0)	Green – standard for Chlorine
+       6	Br	(165, 42, 42)	Brown – standard for Bromine
+
+ */
+.vertexC {
+     -fx-stroke-width: 3;
+     -fx-stroke: rgb(252, 129, 76);
+     -fx-stroke-type: inside; /* you should keep this if using arrows */
+     -fx-fill: rgb(50, 50, 50);
+}
+
+.vertexN {
+        -fx-stroke-width: 3;
+        -fx-stroke: rgb(145, 230, 209);
+        -fx-stroke-type: inside; /* you should keep this if using arrows */
+        -fx-fill: rgb(145, 230, 209);
+        -fx-effect: dropshadow( three-pass-box , rgba(145, 230, 209, .7) , 8, 0.0 , 0 , 0 );
+
+}
+
+.vertexO {
+        -fx-stroke-width: 3;
+        -fx-stroke: rgb(97, 64, 247);
+        -fx-stroke-type: inside; /* you should keep this if using arrows */
+        -fx-fill: rgb(205, 40, 0);
+}
+
+.vertexF {
+        -fx-stroke-width: 2;
+        -fx-stroke: rgb(46,46,46);
+        -fx-stroke-type: inside; /* you should keep this if using arrows */
+        -fx-fill: rgb(144, 224, 80);
+}
+
+.vertexI {
+        -fx-stroke-width: 2;
+        -fx-stroke: rgb(46,46,46);
+        -fx-stroke-type: inside; /* you should keep this if using arrows */
+        -fx-fill: rgb(224, 129, 88);
+}
+
+.vertexCl {
+        -fx-stroke-width: 3;
+        -fx-stroke: rgb(97, 64, 247);
+        -fx-stroke-type: inside; /* you should keep this if using arrows */
+        -fx-fill: rgb(40, 205, 0);
+}
+
+.vertexBr {
+        -fx-stroke-width: 3;
+        -fx-stroke: rgb(97, 64, 247);
+        -fx-stroke-type: inside; /* you should keep this if using arrows */
+        -fx-fill: rgb(165, 42, 42);
+        -fx-effect: dropshadow( three-pass-box , rgba(64, 200, 227, .6) , 8, 0.0 , 0 , 0 );
+}
+
+/* The main checkbox container */
+.check-box {
+    -fx-text-fill: rgb(190, 190, 190); /* Matches your vertex color */
+}
+
+/* The actual box background */
+.check-box .box {
+    -fx-background-color: rgb(46, 46, 46);
+    -fx-border-color: rgb(100, 100, 100);
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+}
+
+/* Hover state for the box */
+.check-box:hover .box {
+    -fx-border-color: rgb(189, 223, 252); /* Light blue highlight */
+}
+
+/* The checkmark itself (hidden by default, shown when selected) */
+.check-box .mark {
+    -fx-background-color: transparent; /* Hidden when unchecked */
+    -fx-shape: "M0,5 L2,3 L5,8 L12,0 L14,2 L5,11 Z"; /* Standard checkmark shape */
+}
+
+/* When checked, color the mark light blue */
+.check-box:selected .mark {
+    -fx-background-color: rgb(189, 223, 252);
+}

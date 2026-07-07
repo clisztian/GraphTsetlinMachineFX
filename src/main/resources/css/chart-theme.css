@@ -1,0 +1,86 @@
+/* Core Academic Canvas Configuration */
+.chart {
+    -fx-padding: 12px;
+    -fx-background-color: #ffffff; /* Clean white for print journals */
+    -fx-background-radius: 0px;    /* Sharp angles standard for figures */
+}
+
+.chart-title {
+    -fx-text-fill: #111111;        /* Dark near-black high contrast text */
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* Axis Line and Typography Alignment */
+.axis {
+    -fx-tick-label-fill: #333333;
+    -fx-font-size: 10px;
+}
+.axis-label {
+    -fx-text-fill: #111111;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+/* Subtle Dotted Grid Infrastructure */
+.chart-vertical-grid-lines, .chart-horizontal-grid-lines {
+    -fx-stroke: #e1e1e6;
+    -fx-stroke-width: 0.8px;
+    -fx-stroke-dash-array: 2px, 3px;
+}
+
+.chart-plot-background {
+    -fx-background-color: #fafafa;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+}
+
+/* Legend Container Properties */
+.chart-legend {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dddddd;
+    -fx-border-width: 1px;
+    -fx-padding: 6px;
+}
+.chart-legend-item {
+    -fx-text-fill: #111111;
+    -fx-font-size: 10px;
+    -fx-font-weight: bold;
+}
+
+/* FIXED MAPPINGS:
+   Explicitly bind chart paths AND their matching legend symbols to identical colors
+*/
+
+/* --- SERIES 0: Academic Deep Blue (e.g., USDJPY Spot Price) --- */
+.series0.chart-series-line,
+.default-color0.chart-legend-item-symbol {
+    -fx-stroke: #0056b3;
+    -fx-background-color: #0056b3;
+    -fx-stroke-width: 2.2px;
+}
+
+/* --- SERIES 1: Publication Crimson --- */
+.series1.chart-series-line,
+.default-color1.chart-legend-item-symbol {
+    -fx-stroke: #dc3545;
+    -fx-background-color: #dc3545;
+    -fx-stroke-width: 1.5px;
+}
+
+/* --- SERIES 2: Deep Magenta --- */
+.series2.chart-series-line,
+.default-color2.chart-legend-item-symbol {
+    -fx-stroke: #b5007d;
+    -fx-background-color: #b5007d;
+    -fx-stroke-width: 1.5px;
+}
+
+/* --- SERIES 3: Solid Charcoal/Black --- */
+.series3.chart-series-line,
+.default-color3.chart-legend-item-symbol {
+    -fx-stroke: #222222;
+    -fx-background-color: #222222;
+    -fx-stroke-width: 1.5px;
+}

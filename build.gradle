@@ -1,0 +1,94 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.7'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jitpack.io' } // Required for JGNN
+}
+
+javafx {
+    modules = ['javafx.controls', 'javafx.graphics', 'javafx.base', 'javafx.fxml']
+    version = "17.0.1"
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.19.0'
+    implementation group: 'org.apache.commons', name: 'commons-collections4', version: '4.4'
+    implementation group: 'net.sourceforge.javacsv', name: 'javacsv', version: '2.0'
+    // https://mvnrepository.com/artifact/dev.brachtendorf/pcg-java-10
+    implementation group: 'dev.brachtendorf', name: 'pcg-java-10', version: '1.0.1'
+    implementation group: 'joda-time', name: 'joda-time', version: '2.10.8'
+// https://mvnrepository.com/artifact/tech.molecules/external-umap-java
+
+    implementation group: 'org.kordamp.ikonli', name: 'ikonli-javafx', version: '12.3.1'
+    implementation 'org.kordamp.ikonli:ikonli-fontawesome-pack:12.3.1'
+
+    // https://mvnrepository.com/artifact/eu.hansolo.fx/charts
+    implementation("eu.hansolo.fx:charts:17.1.51")
+// https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+    implementation group: 'org.apache.commons', name: 'commons-math3', version: '3.6.1'
+// https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+
+    // https://mvnrepository.com/artifact/com.gluonhq/maps
+    implementation("com.gluonhq:maps:2.0.0-ea+6")
+
+    implementation group: 'org.controlsfx', name: 'controlsfx', version: '11.2.0'
+// https://mvnrepository.com/artifact/com.jfoenix/jfoenix
+    implementation group: 'com.jfoenix', name: 'jfoenix', version: '9.0.10'
+    implementation group: 'io.reactivex.rxjava2', name: 'rxjava', version: '2.2.21'
+// https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core
+
+    implementation("org.slf4j:slf4j-api:2.0.12")
+    implementation("ch.qos.logback:logback-classic:1.5.3")
+    implementation("org.jsoup:jsoup:1.17.2")
+    // Source: https://mvnrepository.com/artifact/org.openjfx/javafx-controls
+    implementation group: 'org.openjfx', name: 'javafx-controls', version: '17.0.1'
+    implementation group: 'org.openjfx', name: 'javafx-graphics', version: '17.0.1'
+    implementation group: 'org.openjfx', name: 'javafx-base', version: '17.0.1'
+
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.17.0")
+
+
+
+    // Source: https://mvnrepository.com/artifact/com.github.haifengl/smile-core
+    implementation group: 'com.github.haifengl', name: 'smile-core', version: '3.1.1'
+    implementation group: 'ai.h2o', name: 'h2o-automl', version: '3.46.0.11'
+    // Source: https://mvnrepository.com/artifact/ai.h2o/h2o-core
+    implementation group: 'ai.h2o', name: 'h2o-core', version: '3.46.0.11'
+    // Source: https://mvnrepository.com/artifact/ai.h2o/h2o-automl
+
+    implementation 'ai.h2o:h2o-app:3.46.0.11'        // <-- add this
+    implementation 'ai.h2o:h2o-algos:3.46.0.11'
+    implementation 'ai.h2o:h2o-genmodel:3.46.0.11'
+// https://mvnrepository.com/artifact/ai.h2o/h2o-web
+    implementation group: 'ai.h2o', name: 'h2o-web', version: '3.46.0.11'
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
