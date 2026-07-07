@@ -15,3 +15,9 @@ The system is organized into four core packages:
 
 
 <img width="831" height="1210" alt="Screenshot from 2026-07-08 00-25-16" src="https://github.com/user-attachments/assets/5020c246-9a28-4044-ae6d-e86ea28dc130" />
+
+## Disclaimer
+
+The views, thoughts, and code implementations contained in this repository are solely those of the authors and do not represent the official policy, position, or views of Wells Fargo & Company or its affiliates. 
+
+This repository is provided strictly for academic research and educational purposes. The code, models, and backtesting metrics contained herein do not constitute investment advice, financial analysis, or a recommendation to buy or sell any financial instruments or currency pairs.
