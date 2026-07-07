@@ -1,7 +1,7 @@
 <img width="1198" height="1008" alt="Screenshot from 2026-07-08 00-23-56" src="https://github.com/user-attachments/assets/438086ac-a213-4be8-b784-b1c05a140da5" />
 
 
-This repository contains the core Java implementation of the Graph Tsetlin Machine for Foreign Exchange (FX) Regime Anticipation. The architecture is divided into three functional layers: data preprocessing/symbolic embedding, graph message passing, and the logic-based Tsetlin Automata learning execution engine.
+This repository contains the core Java implementation of the Graph Tsetlin Machine for Foreign Exchange (FX) Regime Anticipation, by Christian Blakely and Melanie Gilmore of La Jolla Private Wealth Group, Wells Fargo Advisors. The architecture is divided into three functional layers: data preprocessing/symbolic embedding, graph message passing, and the logic-based Tsetlin Automata learning execution engine.
 
 ## Codebase Architecture Overview
 
